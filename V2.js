@@ -12,6 +12,10 @@ V2.prototype = {
 		return Math.atan2((other.y - this.y),(other.x - this.x));
 	},
 
+	angleToFlipY: function(other) {
+		return Math.atan2((this.y-other.y),(other.x - this.x));
+	},
+
 	sub: function(other) {
 		return new V2(this.x-other.x,this.y-other.y);
 	},
