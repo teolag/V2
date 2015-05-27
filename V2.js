@@ -76,6 +76,10 @@ V2.prototype = {
 
 	equals: function(other) {
 		return this.x===other.x && this.y===other.y;
+	},
+	
+	floor: function() {
+		return new V2(Math.floor(this.x), Math.floor(this.y));
 	}
 
 }
