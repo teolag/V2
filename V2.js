@@ -84,6 +84,14 @@ V2.prototype = {
 	
 	floor: function() {
 		return new V2(Math.floor(this.x), Math.floor(this.y));
+	},
+	
+	limit: function(max) {
+		if(this.length() > max) {
+			return this.norm().scale(max);
+		} else {
+			return this.clone();
+		}
 	}
 
 }
